@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Jake Tirsch</title>
+  <meta name="description" content="All my projects throughout my journey.">
+  <meta name="theme-color" content="#1D4ED8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Jake Tirsch</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">about</a></li>
+          <li><a href="experience.html">experience</a></li>
+          <li><a href="projects.html" aria-current="page">projects</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="page-head">
+        <h1 class="page-title">Projects</h1>
+        <p class="lede">A collection of my projects throughout my journey.</p>
+      </div>
+
+      <!-- ============ PROJECT 1: 2026 competition robot ============ -->
+      <section class="row" aria-labelledby="robot-h">
+        <div>
+          <h2 id="robot-h">2026 competition robot</h2>
+          <p class="meta">FRC Team 7415</p>
+        </div>
+        <div class="row-body">
+          <figure class="project-figure">
+            <img src="Assets/ark.jpg" width="360" height="240">
+            <figcaption>Team 7415's 2026 competition robot.</figcaption>
+          </figure>
+
+          <p>I led the mechanical and code teams that built our 2026 robot, and I wrote over 90% of its code. This was my first ever major coding project, and I had to teach myself from scratch.</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Trapazoidal PID controller for linear intake</li>
+            <li>Finite state machine to determine robot states for ease of readability and changeability</li>
+            <li>Dynamic current limits based on current robot states</li>
+            <li>Bang Bang controller for the shooter, prioritizing spinup and recovery time</li>
+            <li>Four independently powered shooters based on the distance from the scoring location and each shooter independently</li>
+            <li>Two cameras with Kalman filters to get accurate robot pose down to the inch</li>
+            <li>Telemetry values logging motor values for post-match debugging</li>
+          <div class="actions">
+            <a class="button" href="https://www.chiefdelphi.com/t/team-7415-jaguar-robotics-2026-cad-code-and-tech-binder-release/521822" target="_blank" rel="noopener noreferrer">Tech binder release<span class="visually-hidden"></span></a>
+            <br>
+            <!-- PUT YOUR CODE LINK between the quotes after href= (for example your GitHub repo) -->
+            <a class="button button-outline" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/tree/CurrentLimits" target="_blank" rel="noopener noreferrer">Read the Code<span class="visually-hidden"> </span></a>
+          </div>
+
+          <h3 class="subhead">Awards</h3>
+          <ul>
+            <li>Innovation in Control Award, World Championships, for the top innovative programming in the world</li>
+            <li>Ranked 7th in california on district points</li>
+            <li>48th best Autonomous Performance in the world</li>
+            <li>Event Finalists, Southern California District Championships</li>
+            <li>Event winners, Glendale District Event.</li>
+            <li>Industrial Design Award, Event Finalists, Ventura District Event</li>
+            <li>Event Finalists, Tidal Tumble Regional Event.</li> 
+
+          </ul>
+        </div>
+      </section>
+
+            <!-- ============ PROJECT 2: OverClocked Cadathon ============ -->
+      <section class="row" aria-labelledby="robot-h">
+        <div>
+          <h2 id="robot-h">2026 Summer Cad Challenge robot</h2>
+          <p class="meta">FRC Team 7415</p>
+        </div>
+        <div class="row-body">
+          <figure class="project-figure">
+            <img src="Assets/Phynex..jpg" width="360" height="240">
+            <figcaption>Offseason CAD challenge.</figcaption>
+          </figure>
+
+          <p>This was an offseason CAD challenge that some of our team members participated in. As an extra challenge, I decided to program the robot as if it were a real competition robot. This was my first time ever using a 3D simulator and physics simulation in my robots. The whole code was completed in 10 days. I also took it upon myself to create a mini youtube reveal video showcasing both the CAD and the Simulator</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Multi-Stage elevator with a Trapazoidal PID controller</li>
+            <li>Finite state machine to determine robot states for ease of readability and changeability</li>
+            <li>Complex handoff sequence that required coordnation between three subsystems</li>
+            <li>Full 3D visualization of the robot, its components, and game pieces</li>
+            <li>Full physics simulation including collision and scoring of game pieces</li>
+          <div class="actions">
+            <a class="button" href="https://www.youtube.com/watch?v=iF5AEYLJcEI" target="_blank" rel="noopener noreferrer">YouTube Reveal Video<span class="visually-hidden"></span></a>
+            <br>
+            <!-- PUT YOUR CODE LINK between the quotes after href= (for example your GitHub repo) -->
+            <a class="button button-outline" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026" target="_blank" rel="noopener noreferrer">Read the Code<span class="visually-hidden"> </span></a>
+          </div>
+      </section>
+
+            <!-- ============ PROJECT 3: Tickbot ============ -->
+      <section class="row" aria-labelledby="robot-h">
+        <div>
+          <h2 id="robot-h">2026 Offseason Competition Robot</h2>
+          <p class="meta">FRC Team 7415</p>
+        </div>
+        <div class="row-body">
+          <figure class="project-figure">
+            <img src="Assets/Tick.jpg" width="540" height="570">
+            <figcaption>Offseason B Bot.</figcaption>
+          </figure>
+
+          <p>An offseason robot built for the 2026 season. The team was given one month of limited meetings to fully design, program, and build the robot (instead of the typical 3 months). This meant that the robot had to be fully programmed before it was created physcially. Using physics based mechanism simulation, I was able to tune PID values before getting the robot, leading to no tuning needing to be done in real life.</p>
+          <h3>Features:</h3>
+          <ul>
+            <li>Cycloidal intake to minimize slop</li>
+            <li>Finite state machine to determine robot states for ease of readability and changeability</li>
+            <li>Dynamic current limits to protect battery life</li>
+            <li>Accurate physics simulation of components to eliminate physical tuning</li>
+            <li>Uses motor current spike detection as a sensor to change robot behavior</li>
+          <div class="actions">
+            <a class="button" href="https://github.com/Jaguar-Robotics/2026-Rebuilt-B-Bot/tree/controls-and-outpost-update" target="_blank" rel="noopener noreferrer">Read the Code<span class="visually-hidden"></span></a>
+          </div>
+      </section>
+
+
+      <!-- ============ PROJECT 2: Spirulina (no awards, so no Awards section) ============ -->
+      <section class="row" aria-labelledby="spirulina-h">
+        <div>
+          <h2 id="spirulina-h">Spirulina Sustainability Project</h2>
+          <p class="meta">2025 to 2026</p>
+        </div>
+        <div class="row-body">
+          <p>I’m designing and building a robotic mechanism to improve the viability and sustainability of spirulina, a superfood provided to food-scarce communities in Uganda.</p>
+          <p>The mechanism will be introduced in Uganda this year, with a goal of improving sustainability 10-fold.</p>
+
+          <div class="notes">
+            <h3>Features:</h3>
+            <!-- REPLACE the text below with your own writing -->
+            <p>Battery powered servo to spin at a specific rate, based on what the user requests.</p>
+            <p>watertight housing to protect internal components from moisture and debris.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROJECT 3: StellarXplorers ============ -->
+      <section class="row" aria-labelledby="stellar-h">
+        <div>
+          <h2 id="stellar-h">StellarXplorers National Space Design Competition</h2>
+          <p class="meta">2025 to 2026</p>
+        </div>
+        <div class="row-body">
+          <p>This NASA and Air and Space Forces Association sponsored competition gives teams a design prompt, such as building the most monetarily efficient satellite. As a core member of a 6-person team, I used Excel and Desmos to solve orbit planning, satellite component, and launch operations scenarios. I used excel to create parametric spreadsheets that allowed me to complete the semifinals round (usally requires 2-3 people) solo and got perfect points.</p>
+
+          <div class="notes">
+            <h3>Features</h3>
+            <p>Fully parametric spreadsheet that encorperates all design parameters, including environmental conditions, launch date, fines, and fuel consumption.</p>
+            <p>Auto calculated the score that I would get, meaning no manual calculation required.</p>
+          </div>
+
+          <h3 class="subhead">Awards</h3>
+          <ul>
+            <li>National semi-finalists, ranked in the top 30 globally.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Jake Tirsch</div>
+  </footer>
+</body>
+</html>
