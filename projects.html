@@ -31,10 +31,10 @@
     <div class="wrap">
       <div class="page-head">
         <h1 class="page-title">Projects</h1>
-        <p class="lede">A collection of my projects throughout my journey.</p>
+        <p class="lede">A collection of my projects throughout my journey. Press "link" to view the code snippets mentioned</p>
       </div>
 
-      <!-- ============ PROJECT 1: 2026 competition robot ============ -->
+<!-- ============ PROJECT 1: 2026 competition robot ============ -->
       <section class="row" aria-labelledby="robot-h">
         <div>
           <h2 id="robot-h">2026 competition robot</h2>
@@ -42,70 +42,85 @@
         </div>
         <div class="row-body">
           <figure class="project-figure">
-            <img src="Assets/ark.jpg" width="360" height="240">
+            <img src="Assets/ark.jpg" width="360" height="240" alt="Team 7415's 2026 competition robot with red bumpers on the field">
             <figcaption>Team 7415's 2026 competition robot.</figcaption>
           </figure>
 
-          <p>I led the mechanical and code teams that built our 2026 robot, and I wrote over 90% of its code. This was my first ever major coding project, and I had to teach FRC based Java programming to myself from scratch.</p>
-          <h3>Features:</h3>
+          <p>I led the mechanical and code teams that built our 2026 robot, which was tasked with scoring 6in diameter foam balls into a target. I wrote over 90% of its code. This was my first ever major coding project, and I had to teach FRC based Java programming to myself from scratch.</p>
+
+          <h3 class="subhead">Features</h3>
+          <!-- Each "link" button below: change href="#" to your real link later -->
           <ul>
-            <li>Trapazoidal PID controller for linear intake</li>
-            <li>Finite state machine to determine robot states for ease of readability and changeability</li>
-            <li>Dynamic current limits based on current robot states</li>
-            <li>Bang Bang controller for the shooter, prioritizing spinup and recovery time</li>
-            <li>Capable of scoring from anyone mechanically possibe with regression and a lookup table</li>
-            <li>Four independently powered shooters each based on their own distance from the scoring location</li>
-            <li>Used vector subtraction and a time of flight lookup table to score while moving</li>
-            <li>Two cameras with Kalman filters working with drive odometry to get accurate robot pose down to the inch anywhere on the field</li>
-            <li>Internal automation so all robot functions can be prefomed with two buttons</li>
-            <li>Telemetry values logging motor values for post-match debugging</li>
+            <li>Used vector subtraction and a time of flight lookup table to score while moving <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/subsystems/CommandSwerveDrivetrain.java#L657-L824" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Trapezoidal PID controller for linear intake <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/subsystems/Elevator.java" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Finite state machine to determine robot states for ease of readability and changeability <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/handlers/Superstructure.java#L120-L322" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Dynamic current limits based on current robot states <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/handlers/PowerHandler.java" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Bang Bang controller for the shooter, prioritizing spinup and recovery time <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/subsystems/BangBangShooterSubsystem.java" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Capable of scoring from anywhere mechanically possible with regression and a lookup table <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/subsystems/BangBangShooterSubsystem.java#L50-L67" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Four independently powered shooters each based on their own distance from the scoring location <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/subsystems/BangBangShooterSubsystem.java#L189-L217" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Two cameras with Kalman filters working with drive odometry to get accurate robot pose down to the inch anywhere on the field <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/subsystems/Vision.java" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Internal automation so all robot functions can be performed with two buttons <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/handlers/Superstructure.java#L349-L382" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+            <li>Telemetry values logging motor values for post-match debugging <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/blob/176142835bcf32272d4d319baca69c11fc5bad47/src/main/java/frc/robot/Telemetry.java" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"> </span></a></li>
+          </ul>
+
           <div class="actions">
-            <a class="button" href="https://www.chiefdelphi.com/t/team-7415-jaguar-robotics-2026-cad-code-and-tech-binder-release/521822" target="_blank" rel="noopener noreferrer">Tech binder release<span class="visually-hidden"></span></a>
+            <a class="button" href="https://www.chiefdelphi.com/t/team-7415-jaguar-robotics-2026-cad-code-and-tech-binder-release/521822" target="_blank" rel="noopener noreferrer">Tech binder release<span class="visually-hidden"> </span></a>
             <br>
-            <!-- PUT YOUR CODE LINK between the quotes after href= (for example your GitHub repo) -->
-            <a class="button button-outline" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/tree/CurrentLimits/src/main/java/frc/robot" target="_blank" rel="noopener noreferrer">Read the Code<span class="visually-hidden"> </span></a>
+            <a class="button button-outline" href="https://github.com/Jaguar-Robotics/FRC7415-2026Code/tree/CurrentLimits/src/main/java/frc/robot" target="_blank" rel="noopener noreferrer">Read the Full Code<span class="visually-hidden"> </span></a>
           </div>
 
           <h3 class="subhead">Awards</h3>
           <ul>
             <li>Innovation in Control Award, World Championships, for the top innovative programming in the world</li>
-            <li>Ranked 7th in california on district points</li>
+            <li>Ranked 7th in California on district points</li>
             <li>48th best Autonomous Performance in the world</li>
             <li>Event Finalists, Southern California State Championships</li>
             <li>Event winners, Glendale District Event.</li>
             <li>Industrial Design Award, Event Finalists, Ventura District Event</li>
-            <li>Event Finalists, Tidal Tumble Regional Event.</li> 
-
+            <li>Event Finalists, Tidal Tumble Regional Event.</li>
           </ul>
         </div>
       </section>
 
-            <!-- ============ PROJECT 2: OverClocked Cadathon ============ -->
-      <section class="row" aria-labelledby="robot-h">
+<!-- ============ PROJECT 2: OverClocked Cadathon ============ -->
+      <section class="row" aria-labelledby="cadathon-h">
         <div>
-          <h2 id="robot-h">2026 Summer Cad Challenge robot</h2>
+          <h2 id="cadathon-h">2026 Summer Cad Challenge robot</h2>
           <p class="meta">FRC Team 7415</p>
         </div>
         <div class="row-body">
           <figure class="project-figure">
-            <img src="Assets/Phynex..jpg" width="360" height="240">
+            <img src="Assets/Phynex..jpg" width="360" height="240" alt="CAD render of the robot from the 2026 summer offseason CAD challenge">
             <figcaption>Offseason CAD challenge.</figcaption>
           </figure>
 
-          <p>This was an offseason CAD challenge that some of our team members participated in. As an extra challenge, I decided to program the robot as if it were a real competition robot. This was my first time ever using a 3D simulator and physics simulation in my robots. The whole code was completed in 10 days. I also took it upon myself to create a mini youtube reveal video showcasing both the CAD and the Simulator</p>
-          <h3>Features:</h3>
+          <p>This was an offseason CAD challenge that some of our team members participated in. As an extra challenge, I decided to program the robot as if it were a real competition robot. This was my first time ever using a 3D simulator and physics simulation in my robots. The whole code was completed in 10 days. I also took it upon myself to create a mini YouTube reveal video showcasing both the CAD and the simulator.</p>
+
+          <h3 class="subhead">Features</h3>
           <ul>
-            <li>Multi-Stage elevator with a Trapazoidal PID controller</li>
-            <li>Finite state machine to determine robot states for ease of readability and changeability</li>
-            <li>Complex handoff sequence that required coordnation between three subsystems</li>
-            <li>Full 3D visualization of the robot, its components, and game pieces</li>
-            <li>Full physics simulation including collision and scoring of game pieces</li>
+            <li>Multi-stage elevator with a trapezoidal PID controller <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/blob/51bf32711e2320ffbde7a9c95402e6472b55d374/src/main/java/frc/robot/subsystems/ElevatorSubsystem.java" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"></span></a></li>
+            <li>Finite state machine to determine robot states for ease of readability and changeability <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/blob/51bf32711e2320ffbde7a9c95402e6472b55d374/src/main/java/frc/robot/handlers/Superstructure.java#L86-L140" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"></span></a></li>
+            <li>Complex handoff sequence that required coordination between three subsystems <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/blob/51bf32711e2320ffbde7a9c95402e6472b55d374/src/main/java/frc/robot/handlers/Superstructure.java#L86-L140" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"></span></a></li>
+            <li>Full 3D visualization of the robot, its components, and game pieces <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/blob/51bf32711e2320ffbde7a9c95402e6472b55d374/src/main/java/frc/robot/RobotContainer.java#L195-L211" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"></span></a></li>
+            <li>Full physics simulation including collision and scoring of game pieces <a class="button button-outline button-small" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/tree/51bf32711e2320ffbde7a9c95402e6472b55d374/src/main/java/frc/robot/utils/simulation" target="_blank" rel="noopener noreferrer">link<span class="visually-hidden"></span></a></li>
+          </ul>
+
           <div class="actions">
-            <a class="button" href="https://www.youtube.com/watch?v=iF5AEYLJcEI" target="_blank" rel="noopener noreferrer">YouTube Reveal Video<span class="visually-hidden"></span></a>
-            <br>
-            <!-- PUT YOUR CODE LINK between the quotes after href= (for example your GitHub repo) -->
-            <a class="button button-outline" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/tree/main/src/main/java/frc/robot" target="_blank" rel="noopener noreferrer">Read the Code<span class="visually-hidden"> </span></a>
+            <a class="button button-outline" href="https://github.com/Jaguar-Robotics/OverclockedCADATHON2026/tree/main/src/main/java/frc/robot" target="_blank" rel="noopener noreferrer">Read the full Code<span class="visually-hidden"></span></a>
           </div>
+
+          <figure class="project-figure">
+            <div class="video">
+              <iframe src="https://www.youtube-nocookie.com/embed/iF5AEYLJcEI"
+                      title="Robot reveal video for the 2026 summer CAD challenge"
+                      loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+            <figcaption>Robot reveal video.</figcaption>
+          </figure>
+        </div>
       </section>
 
             <!-- ============ PROJECT 3: Tickbot ============ -->
